@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+pandas
+openpyxl
+pdfplumber
+requests
+python-multipart
