@@ -48,5 +48,7 @@ def login(email: str, senha: str):
     except HTTPException:
         raise
     except Exception as e:
-        print("ERRO LOGIN:", e)
-        raise HTTPException(status_code=500, detail="Erro interno no login")
+    import traceback
+    print("ERRO LOGIN:", str(e))
+    traceback.print_exc()
+    raise HTTPException(status_code=500, detail="Erro interno no login")
